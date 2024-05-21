@@ -4,16 +4,24 @@
     font-family: Montserrat;
 }
 
-nav{
-width: 80%;
-margin: 20px auto;
-display: flex;
-justify-content: space-around;
-background-color: #999;
-}
+ :root {
+        --color-primary: #eaab0a;
+        --color-secundary: #ffc501;
+        --text-primary: #fff;
+        --text-primary: #000;
+        --bg-footer: #000;
+      }
+
+nav {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #999;
+    }
 
 h1{
-    color: #fff;
+    color: var(--text-primary);
     font-size: 40px;
     height: 50px;
     letter-spacing: -0.8px;
@@ -21,7 +29,7 @@ h1{
 }
 
 .accent{
-    color: #eaab0a;
+    color: var(--color-primary);
 }
 
 .subtitle{
@@ -43,7 +51,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--text-primary);
     font-size: 15px;
     font-weight: 500;
     margin-left: 30px;
@@ -78,7 +86,7 @@ header > h2{
 }
 
 header > p{
-    color: #fff;
+    color:  var(--text-primary);
     font-size: 20px;
     font-weight: 400;
     width: 645px;
@@ -102,22 +110,10 @@ header > p{
     left: 350px;
 }
 
-.section1 > p{
-    width: 494px;
-    font-size: 25px;
+.section1 > h4 > small{
     font-weight: 400;
-}
-
-.section1 > .paragrafo1 {
-    position: absolute;
-    top: 280px;
-    left: 350px;
-}
-
-.section1 > .paragrafo2 {
-    position: absolute;
-    top: 420px;
-    left: 350px;
+    display: block;
+    margin-top: 30px;
 }
 
 .section1 > div {
@@ -155,7 +151,7 @@ footer{
     background: #000;
     width: 100%;
     height: 300px;
-    color: #fff;
+    color:  var(--text-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,7 +187,7 @@ footer > div > form > input {
 }
 
 footer > div > form > input::placeholder { 
-    color: #fff;
+    color:  var(--text-primary);
     font-size: 15px;
     font-weight: 900;
     letter-spacing: -0.3px;
@@ -212,7 +208,7 @@ footer > hr {
     width: 1149.402px;
     height: 0px;
     stroke-width: 0.5px;
-    stroke: #fff;
+    stroke: var(--text-primary);
 }
 
 footer > p {
