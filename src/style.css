@@ -8,7 +8,7 @@
         --color-primary: #eaab0a;
         --color-secundary: #ffc501;
         --text-primary: #fff;
-        --text-primary: #000;
+        --text-secundary: #000;
         --bg-footer: #000;
       }
 
@@ -60,11 +60,11 @@ a{
 }
 
 a:hover{
-    color:#ffc501;
+    color:var(--color-secundary);
 }
 
 .selected{
-    color:#eaab0a;   
+    color:var(--color-primary) 
 }
 
 header{
@@ -78,7 +78,7 @@ header{
 }
 
 header > h2{
-    color: #ffc501;
+    color: var(--color-secundary);
     font-size: 120px;
     font-weight: 900;
     margin-top: 180px;
@@ -127,7 +127,7 @@ header > p{
 }
 
 .section2 {
-    background: #ffc501;
+    background: var(--color-secundary);
     height: 562px;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ header > p{
 }
 
 footer{ 
-    background: #000;
+    background: var(--bg-footer);
     width: 100%;
     height: 300px;
     color:  var(--text-primary);
@@ -181,7 +181,7 @@ footer > div > label {
 footer > div > form > input {
     width: 312px;
     height: 50px;
-    background: #eaab0a;
+    background: var(--color-primary);
     border: none;
     padding: 0 5px;
 }
@@ -218,5 +218,5 @@ footer > p {
 }
 
 footer > p > span{
-    color: #eaab0a;
+    color: var(--color-primary)
 }
