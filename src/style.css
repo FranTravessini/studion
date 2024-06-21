@@ -4,6 +4,7 @@
 @import "./css/_nav.css";
 @import "./css/_header.css";
 @import "./css/_footer.css";
+@import "./css/empresa.css";
 
 
 *{
@@ -249,4 +250,3 @@ footer > p > span{
     color: #eaab0a;
 
 }
-
