@@ -1,11 +1,30 @@
 header{
-    background-color:  lightgray;
+
+    position: relative;
+    z-index: -1;
+    /* background-color:  lightgray;
     background-position: center;
-    background-size: cover; /*cobrir todo espaço disponivel*/
-    background-repeat: no-repeat; /* nao repitir a imagem */
-    width: 100%;
+    background-size: cover; cobrir todo espaço disponivel
+    background-repeat: no-repeat;  nao repitir a imagem 
+    width: 100%;*/
 }
 
+
+.background__header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+.header_background__mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8)
+}
 .container__header{
     height: 100%;
     min-height: 70vh;
@@ -26,12 +45,33 @@ header{
     font-size: 2rem;
     font-weight: 400;
     width: 100%;
-    max-width:64.5rem;
+    max-width:60rem;
   
 }
 
 @media screen and (max-width:800px){
-    header > h2{
-        font-size: 8rem;
+
+.container__header h2{
+    font-size: 8rem;
+}    
+
+.container__header p{
+    font-size: 1.8rem;
+    max-width: 50rem;
 }
+
+
 }
+
+@media screen and (max-width:460px){
+
+    .container__header h2{
+        font-size: 6rem;
+    }    
+    
+    .container__header p{
+        font-size: 1.4rem;
+        max-width: 40rem;
+    }
+}
+
