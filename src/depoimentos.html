@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/">
-    <title>Depoimentos</title>
+    <link rel="stylesheet" href="./css/depoimentos.css">
+    <title>Studion - Depoimentos</title>
 </head>
 <body>
-    <nav>
-        <a href="./">
-             <h1>
-                Studi<span class="accent">on</span> 
-                <span class="subtitle">Eventos</span>
-            </h1>
-        </a>
-        <ul>
+    <nav class="nav">
+        <a href="./index.html">
+            <h1 class="logo">
+               Studi<span class="accent">on</span> 
+               <span class="subtitle">Eventos</span>
+           </h1>
+       </a>
+       <input id="menu-toggle" type="checkbox" />
+       <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button">
+            </div>
+       </label>
+        <ul class="menu">
             <li>
                 <a href="./empresa.html" >Empresa</a>
             </li>
@@ -29,57 +34,145 @@
                 <a href="#" class="active">Depoimentos</a>
             </li>            
             <li>
-                <a href="./contato.html">Contato</a>
+                <a href="./contato.html" >Contato</a>
             </li>
         </ul>
     </nav>
 
-    <header class="container">
-        <h2>.depoimentos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+    <header>
+        <img class="background__header" 
+        src="./imagens/header_depoimentos.png" 
+        alt="computador"
+        style="   filter: brightness(0.6);">
+        <div class="container container__header">
+            <h2 class="depo" >.depoimentos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+        </div>
     </header>
 
     <main>
-        
+        <section class="container carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li 
+                    id="carousel__slide1"
+                    tabindex="0"
+                    class="carousel__slide"
+                >
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3"
+                        class="carousel__prev"></a>
+                        
+                            <section class="section" >
+                                <img class="user-image" src="./imagens/testimonials/number-one.jpeg" alt="pessoa">
+                                <h4 class="name">
+                                    Alberto Saldanha
+                                    <small>CEO - vitamusic</small>
+                                </h4>
+                                <p class="quotes" >“</p>
+                                <p class="text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </section>
+   
+                    <a href="#carousel__slide2"
+                        class="carousel__next"></a>
+                
+                </li>
+                <li 
+                    id="carousel__slide2"
+                    tabindex="0"
+                    class="carousel__slide"
+                >
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                    class="carousel__prev"></a>
+                    
+                        <section class="section" >
+                            <img class="user-image" src="./imagens/testimonials/number-two.png" alt="pessoa">
+                            <h4 class="name">
+                                Mariana Bastos
+                                <small>Prod de eventos - +Midia</small>
+                            </h4>
+                            <p class="quotes" >“</p>
+                            <p class="text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </section>
+               
+                    <a href="#carousel__slide3"
+                    class="carousel__next"></a>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                    class="carousel__prev"></a>
+
+                            <section class="section" >
+                                <img class="user-image" src="./imagens/testimonials/number-three.png" alt="pessoa">
+                                <h4 class="name">
+                                    Guilherme Silva
+                                    <small>Gerente de marketing - comiusic</small>
+                                </h4>
+                                <p class="quotes" >“</p>
+                                <p class="text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </section>
+  
+                    <a href="#carousel__slide1"
+                    class="carousel__next"></a>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button"></a>
+                </li>
+              </ol>
+            </aside>
+          </section>
     </main>
 
-    <footer>
-        <div class="container">
-             <h2>
+    <footer class="footer">
+        <div class="container container__footer">
+            <h2>
                 Studi<span class="accent">on</span> 
-            <span class="subtitle">Eventos</span>
-             </h2>
+                <span class="subtitle">Eventos</span>
+            </h2>
             <form>
                 <label>
                     Receba News e Promoções
                 </label>
                 <input type="email" placeholder="Email"/>
                 <button type="submit">
-                    <img src="./imagens/seta.svg" alt="enviar">
+                    <img class="icon" src="./imagens/seta.svg" alt="enviar">
                 </button>
             </form>
-          <ul>
-            <li>
-                <a href="#">
-                    <img src="./imagens/icons/facebook.svg" alt="facebook">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./imagens/icons/whatsapp.svg" alt="whatsapp">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./imagens/icons/youtube.svg" alt="youtube">
-                </a>
-            </li>
-         </ul>
+            <ul class="socials">
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./imagens/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./imagens/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./imagens/icons/youtube.svg" alt="youtube">
+                    </a>
+                </li>
+            </ul>
         </div>
         <hr/>
-        <p class="container">Studi<span>on</span> - Todos os direitos reservados</p>
-
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
-
 </body>
 </html>

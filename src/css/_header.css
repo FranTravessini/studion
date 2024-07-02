@@ -18,13 +18,15 @@ header{
     object-fit: cover;
     object-position: center;
 }
-.header_background__mask{
+/* .header_background__mask{
+
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     background: rgba(0, 0, 0, 0.8)
-}
+} */
+
 .container__header{
     height: 100%;
     min-height: 70vh;
@@ -35,7 +37,7 @@ header{
 }
 
 .container__header h2{
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: 12rem;
     font-weight: 900;
 }
@@ -48,6 +50,9 @@ header{
     max-width:60rem;
   
 }
+.container__header .depo{
+    font-size: 9rem;
+}
 
 @media screen and (max-width:800px){
 
@@ -59,7 +64,9 @@ header{
     font-size: 1.8rem;
     max-width: 50rem;
 }
-
+.container__header .depo{
+    font-size: 6rem;
+}
 
 }
 
@@ -72,6 +79,9 @@ header{
     .container__header p{
         font-size: 1.4rem;
         max-width: 40rem;
+    }
+    .container__header .depo{
+        font-size: 3rem;
     }
 }
 

@@ -40,8 +40,10 @@
     </nav>
 
     <header>
-        <img class="background__header" src="./imagens/header_contato.png" alt="computador">
-        <div class="header_background__mask"></div>
+        <img class="background__header" 
+        src="./imagens/header_contato.png" 
+        alt="computador"
+        style="   filter: brightness(0.2)";>
         <div class="container container__header">
             <h2>.contato</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
@@ -50,35 +52,37 @@
 
     <main>
         <section class="section1">
-            
             <section class="section1-left">
+                <div class="section1-left__contato-container">
                 <h4>LIGUE PARA GENTE</h4>
                 <p>
-                    <img src="./imagens/icons/telefone.png" alt="telefone">
+                    <img class="icon" src="./imagens/icons/telefone.png" alt="telefone">
                     +55 48 3223-5769
                 </p>
                 <p>
-                    <img src="./imagens/icons/whatsapp-amarelo.png" alt="whatsapp">
+                    <img  class="icon" src="./imagens/icons/whatsapp-amarelo.png" alt="whatsapp">
                     +55 48 99943-7777            
                 </p>
                 <h4>VENHA CONHECER NOSSA CASA</h4>
-                <p>
-                    <img src="./imagens/icons/localização-amarela.png" alt="ponto de localização">
+                <p class="address" >
+                    <img  class="icon" src="./imagens/icons/localização-amarela.png" alt="ponto de localização">
                     Rua miguel duax, 129 - coqueiros Florianópolis/sc
-                </p>                 
+                </p>
+            </div>                 
             </section>
 
             <section class="section1-rigth">
                 <div class="section1-rigth__form-container">
                     <h4>DEIXE SUA MENSAGEM</h4>
-                    <label for="name">SEU NOME</label>
-                    <input id="name" type="text" >
-                    <label for="email">SEU EMAIL</label>
-                    <input id="email" type="email" >
-                    <label for="message">SUA MENSAGEM</label>
-                    <textarea id="message"></textarea>
-                    <button type="submit">ENVIAR</button>
-
+                    <form >
+                        <label for="name">SEU NOME</label>
+                        <input id="name" type="text" >
+                        <label for="email">SEU EMAIL</label>
+                        <input id="email" type="email" >
+                        <label for="message">SUA MENSAGEM</label>
+                        <textarea id="message"></textarea>
+                        <button type="submit">ENVIAR</button>
+                    </form>
                 </div>
             </section>
         </section>
