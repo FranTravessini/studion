@@ -27,7 +27,7 @@ header{
     background: rgba(0, 0, 0, 0.8)
 } */
 
-.container__header{
+/* .container__header{
     height: 100%;
     min-height: 70vh;
     display: flex;
@@ -49,7 +49,37 @@ header{
     width: 100%;
     max-width:60rem;
   
-}
+} */
+
+.container__header {
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .container__header h2 {
+    color: var(--color-secondary);
+    font-size: 16rem;
+    font-family: var(--font-primary);
+  }
+  
+  .container__header .testimonials-title {
+    font-size: 11rem;
+  }
+  
+  .container__header p {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 60rem;
+    width: 100%;
+  }
+
+
+
 .container__header .depo{
     font-size: 9rem;
 }
